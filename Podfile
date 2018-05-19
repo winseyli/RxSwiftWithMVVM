@@ -6,6 +6,7 @@ target 'RxSwiftWithMVVM' do
   use_frameworks!
 
   # Pods for RxSwiftWithMVVM
+  pod 'Alamofire'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
 

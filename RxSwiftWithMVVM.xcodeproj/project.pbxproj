@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		D3D10522E1646CD905271400 /* Pods_RxSwiftWithMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D34B6AE8331B761F2DA77FA /* Pods_RxSwiftWithMVVM.framework */; };
+		D812A66120B0BF37002DF9C3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A66020B0BF37002DF9C3 /* Post.swift */; };
+		D812A66820B0C450002DF9C3 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A66720B0C450002DF9C3 /* UIViewController+Extension.swift */; };
 		D84E082A20B01E5700FD4190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E082920B01E5700FD4190 /* AppDelegate.swift */; };
-		D84E082C20B01E5700FD4190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E082B20B01E5700FD4190 /* ViewController.swift */; };
-		D84E082F20B01E5700FD4190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84E082D20B01E5700FD4190 /* Main.storyboard */; };
 		D84E083120B01E5800FD4190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84E083020B01E5800FD4190 /* Assets.xcassets */; };
 		D84E083420B01E5800FD4190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84E083220B01E5800FD4190 /* LaunchScreen.storyboard */; };
+		D84E083D20B02E9200FD4190 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E083C20B02E9200FD4190 /* DataService.swift */; };
+		D84E084020B02F8F00FD4190 /* TableViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E083E20B02F8F00FD4190 /* TableViewExampleViewController.swift */; };
+		D84E084120B02F8F00FD4190 /* TableViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84E083F20B02F8F00FD4190 /* TableViewExampleViewController.xib */; };
+		D84E084620B0322300FD4190 /* TableViewExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E084520B0322300FD4190 /* TableViewExampleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50D87D2339C253B8BE5FB560 /* Pods-RxSwiftWithMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftWithMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftWithMVVM/Pods-RxSwiftWithMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		7D34B6AE8331B761F2DA77FA /* Pods_RxSwiftWithMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftWithMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B03A6D263BCD73329523F /* Pods-RxSwiftWithMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftWithMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftWithMVVM/Pods-RxSwiftWithMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		D812A66020B0BF37002DF9C3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D812A66720B0C450002DF9C3 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		D84E082620B01E5700FD4190 /* RxSwiftWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84E082920B01E5700FD4190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D84E082B20B01E5700FD4190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D84E082E20B01E5700FD4190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D84E083020B01E5800FD4190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D84E083320B01E5800FD4190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84E083520B01E5800FD4190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84E083C20B02E9200FD4190 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D84E083E20B02F8F00FD4190 /* TableViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExampleViewController.swift; sourceTree = "<group>"; };
+		D84E083F20B02F8F00FD4190 /* TableViewExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewExampleViewController.xib; sourceTree = "<group>"; };
+		D84E084520B0322300FD4190 /* TableViewExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExampleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D812A65F20B0BF22002DF9C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D812A66020B0BF37002DF9C3 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D812A66420B0C410002DF9C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D812A66720B0C450002DF9C3 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D84E081D20B01E5700FD4190 = {
 			isa = PBXGroup;
 			children = (
@@ -78,14 +102,42 @@
 		D84E082820B01E5700FD4190 /* RxSwiftWithMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				D84E082920B01E5700FD4190 /* AppDelegate.swift */,
-				D84E082B20B01E5700FD4190 /* ViewController.swift */,
-				D84E082D20B01E5700FD4190 /* Main.storyboard */,
-				D84E083020B01E5800FD4190 /* Assets.xcassets */,
-				D84E083220B01E5800FD4190 /* LaunchScreen.storyboard */,
-				D84E083520B01E5800FD4190 /* Info.plist */,
+				D812A66420B0C410002DF9C3 /* Extension */,
+				D84E084220B02FB200FD4190 /* App */,
+				D84E084420B02FDB00FD4190 /* Data */,
+				D812A65F20B0BF22002DF9C3 /* Model */,
+				D84E084320B02FCB00FD4190 /* TableViewExample */,
 			);
 			path = RxSwiftWithMVVM;
+			sourceTree = "<group>";
+		};
+		D84E084220B02FB200FD4190 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D84E082920B01E5700FD4190 /* AppDelegate.swift */,
+				D84E083020B01E5800FD4190 /* Assets.xcassets */,
+				D84E083520B01E5800FD4190 /* Info.plist */,
+				D84E083220B01E5800FD4190 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D84E084320B02FCB00FD4190 /* TableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				D84E083E20B02F8F00FD4190 /* TableViewExampleViewController.swift */,
+				D84E083F20B02F8F00FD4190 /* TableViewExampleViewController.xib */,
+				D84E084520B0322300FD4190 /* TableViewExampleViewModel.swift */,
+			);
+			path = TableViewExample;
+			sourceTree = "<group>";
+		};
+		D84E084420B02FDB00FD4190 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D84E083C20B02E9200FD4190 /* DataService.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84E083420B01E5800FD4190 /* LaunchScreen.storyboard in Resources */,
+				D84E084120B02F8F00FD4190 /* TableViewExampleViewController.xib in Resources */,
 				D84E083120B01E5800FD4190 /* Assets.xcassets in Resources */,
-				D84E082F20B01E5700FD4190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,11 +234,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftWithMVVM/Pods-RxSwiftWithMVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -202,22 +256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84E082C20B01E5700FD4190 /* ViewController.swift in Sources */,
+				D84E083D20B02E9200FD4190 /* DataService.swift in Sources */,
+				D84E084620B0322300FD4190 /* TableViewExampleViewModel.swift in Sources */,
+				D812A66820B0C450002DF9C3 /* UIViewController+Extension.swift in Sources */,
+				D84E084020B02F8F00FD4190 /* TableViewExampleViewController.swift in Sources */,
 				D84E082A20B01E5700FD4190 /* AppDelegate.swift in Sources */,
+				D812A66120B0BF37002DF9C3 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D84E082D20B01E5700FD4190 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D84E082E20B01E5700FD4190 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D84E083220B01E5800FD4190 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -350,7 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UCRKZW27TS;
-				INFOPLIST_FILE = RxSwiftWithMVVM/Info.plist;
+				INFOPLIST_FILE = RxSwiftWithMVVM/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UCRKZW27TS;
-				INFOPLIST_FILE = RxSwiftWithMVVM/Info.plist;
+				INFOPLIST_FILE = RxSwiftWithMVVM/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
