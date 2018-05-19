@@ -29,7 +29,7 @@ class TableViewExampleViewController: UIViewController {
     
     private func configurateView() {
         // Register cell
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
+        tableView.register(UINib.init(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
     }
     
     private func configurateViewModel() {
@@ -45,8 +45,8 @@ class TableViewExampleViewController: UIViewController {
         
         viewModel.stringData
             .asObservable()
-            .bind(to: tableView.rx.items(cellIdentifier: "DefaultCell", cellType: UITableViewCell.self)) { row, element, cell in
-                cell.textLabel?.text = element.title
+            .bind(to: tableView.rx.items(cellIdentifier: "PostTableViewCell", cellType: PostTableViewCell.self)) { row, element, cell in
+                cell.post = element
             }
             .disposed(by: disposeBag)
         
@@ -60,7 +60,9 @@ class TableViewExampleViewController: UIViewController {
         
         tableView.rx.itemSelected
             .subscribe(onNext: { indexPath in
-                self.showAlert(title: "Row selected", message: "x")
+                if let cell = self.tableView.cellForRow(at: indexPath) as? PostTableViewCell {
+                    self.showAlert(title: cell.post.title, message: cell.post.body)
+                }
                 self.tableView.deselectRow(at: indexPath, animated: true)
             })
             .disposed(by: disposeBag)

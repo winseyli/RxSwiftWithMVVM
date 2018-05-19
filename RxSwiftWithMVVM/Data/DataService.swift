@@ -33,8 +33,11 @@ class DataService {
                     posts.append(post)
                 }
                 
-                observer.onNext(posts)
-                observer.onCompleted()
+                // Simulate a 2 seconds loading
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    observer.onNext(posts)
+                    observer.onCompleted()
+                }
             }
             
             return Disposables.create {
