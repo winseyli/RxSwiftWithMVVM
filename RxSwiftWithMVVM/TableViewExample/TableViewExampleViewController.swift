@@ -13,7 +13,7 @@ import RxCocoa
 class TableViewExampleViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var refreshButton: UIButton!
     
     private var viewModel: TableViewExampleViewModel!
     private let disposeBag = DisposeBag()
@@ -33,15 +33,21 @@ class TableViewExampleViewController: UIViewController {
     }
     
     private func configurateViewModel() {
-        viewModel = TableViewExampleViewModel(dataService: DataService())
+        let refreshDriver = self.refreshButton.rx.tap.asDriver()
+        viewModel = TableViewExampleViewModel(dataService: DataService(), refreshDriver: refreshDriver)
     }
     
     private func configureBindings() {
         viewModel.isLoading
             .drive(onNext: { loading in
-                self.button.setTitle(loading ? "Loading..." : "Refresh", for: .normal) 
+                self.refreshButton.setTitle(loading ? "Loading..." : "Refresh", for: .normal)
             })
             .disposed(by: disposeBag)
+        
+        viewModel.isLoading
+            .map { !$0 }
+            .drive(self.refreshButton.rx.isEnabled)
+            .disposed(by: self.disposeBag)
         
         viewModel.stringData
             .asObservable()

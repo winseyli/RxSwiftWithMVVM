@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewExampleViewController" customModule="RxSwiftWithMVVM" customModuleProvider="target">
             <connections>
-                <outlet property="button" destination="Eva-Xd-gxa" id="Rzb-VL-30G"/>
+                <outlet property="refreshButton" destination="Eva-Xd-gxa" id="Dpf-hm-yyk"/>
                 <outlet property="tableView" destination="gsU-tK-QUe" id="SOw-0G-4Yh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -21,11 +21,26 @@ class TableViewExampleViewModel {
         case error
     }
     
-    init(dataService: DataService) {
+    init(dataService: DataService, refreshDriver: Driver<Void>) {
+        let eventDriver = refreshDriver
+            .startWith(())
+            .flatMapLatest { _ -> Driver<DataEvent> in
+                return dataService.fetchData()
+                    .map { .data($0) }
+                    .asDriver(onErrorJustReturn: .error)
+                    .startWith(.loading)
+        }
+        
+        // ==========================================================
+        // If you do not need a refresh button, you can initalize the
+        // event driver directly as followed.
+        // ==========================================================
+        /*
         let eventDriver: Driver<DataEvent> = dataService.fetchData()
             .map { .data($0) }
             .asDriver(onErrorJustReturn: .error)
             .startWith(.loading)
+         */
     
         isLoading = eventDriver
             .map { event in
