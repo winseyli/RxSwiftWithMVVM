@@ -23,7 +23,7 @@ class TableViewExampleViewModel {
     
     init(dataService: DataService, refreshDriver: Driver<Void>) {
         let eventDriver = refreshDriver
-            .startWith(())
+            .startWith(()) // start without refresh driver trigger
             .flatMapLatest { _ -> Driver<DataEvent> in
                 return dataService.fetchData()
                     .map { .data($0) }
